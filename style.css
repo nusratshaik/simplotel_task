@@ -1,0 +1,226 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto;
+}
+nav {
+    background-color: #edae6a;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    position: relative;
+}
+
+.container {
+    position:relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu{
+    width: 40px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 10px;
+}
+.arrow{
+    width: 20px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.main-content {
+    flex: 1;
+    position: relative;
+    
+    
+    
+}
+.background-left {
+    flex: 1;
+    height: 100%;
+    background: linear-gradient(to right, #cdef23, #ed88df); /* Multi-color background on the left */
+    height: 65vh;
+}
+
+
+.background-image {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.title-container {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    right: 50%;
+    transform: translate(-50%, -60%);
+    text-align: left;
+    color: white;
+    z-index: 1;
+}
+.title-container2 {
+    position: absolute;
+    
+    top: 95%;
+    right: 20%;
+    left: 50%;
+    transform: translate(-0%, -0%);
+    text-align: left;
+    color: white;
+    z-index: 1;
+    
+    background-color: #cdef23;
+}
+.title2{
+    
+    padding: 20px;
+    font-size: 2em;
+}
+
+.title {
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    transform: translateX(-50%);
+}
+
+.button {
+    padding: 10px 20px;
+    
+    background-color: #d87818b2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.image1{
+    padding-top: 100px;
+    padding-left: 90px;
+    width: 200px;
+    height: 130px;
+    
+    
+
+}
+.image3{
+    
+    padding-left: 90px;
+    width: 200px;
+    height: 130px;
+    
+
+}
+.image2{
+    padding-top: 2%;
+    padding-left: 10px;
+    width: 200px;
+    height: 260px;
+    
+
+}
+@media (max-width: 768px) {
+    /* Apply styles for screens with a maximum width of 768px (tablets and smaller) */
+   
+
+    .image1 {
+        padding-left: 20px;
+        padding-top: 90px; /* Add padding to the image on smaller screens */
+        width: 60px; /* Make the image full width on smaller screens */
+        height: 60px;
+         /* Allow the height to adjust proportionally */
+    }
+    .image3 {
+        padding-left: 20px;
+         /* Add padding to the image on smaller screens */
+         padding-top: 20px;
+         width: 60px; /* Make the image full width on smaller screens */
+        height: 60px;
+         /* Allow the height to adjust proportionally */
+    }
+    .image2 {
+        top:60%;
+        padding: 10px; /* Add padding to the image on smaller screens */
+        width: 60px; /* Make the image full width on smaller screens */
+        height: 120px;
+        padding-top: 20px; /* Allow the height to adjust proportionally */
+    }
+    .title-container2 {
+        top: 90%; /* Adjust the top position for smaller screens */
+        right: 10%;
+        left: 50%;
+        transform: translate(-0%, -0%);
+        padding-bottom: 10px;
+    }
+    .title2 {
+        font-size: 1.5em; /* Adjust the font size for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Apply styles for screens with a width between 769px and 1024px (larger tablets) */
+    .title-container2 {
+        top: 90%; /* Adjust the top position for larger tablets */
+        right: 10%;
+        left: 65%;
+        transform: translate(-0%, -0%);
+        
+
+    }
+    .title2 {
+        font-size: 1.5em; /* Adjust the font size for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+    .image1 {
+        padding-left: 50px;
+        padding-top: 90px; /* Adjust padding for tablet screens */
+        width: 180px; /* Maintain the original width */
+        height: 120px; /* Maintain the original height */
+    }
+    .image3 {
+        padding-left: 50px;
+        padding-top: 20px; /* Adjust padding for tablet screens */
+        width: 180px; /* Maintain the original width */
+        height: 120px; /* Maintain the original height */
+    }
+
+    .image2 {
+        padding: 10px; /* Adjust padding for tablet screens */
+        width: 180px; /* Maintain the original width */
+        height: 260px; /* Maintain the original height */
+        padding-top: 2%; /* Adjust padding-top for tablet screens */
+    }
+    
+}
+
+
+
+
+
+
